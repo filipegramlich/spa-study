@@ -31,15 +31,19 @@
             handle()
             window.history.pushState({}, "", event.target.href)
         }
+        
         function handle(){
             const {pathname} = window.location
             const route = routes[pathname] || routes[404]
 
             fetch(route)
             .then(data => data.text())
-            .then(html => console.log(html))
-            
+            .then(html => document.querySelector("#app").innerHTML = html)
         }
+        
+        handle()
+
+        window.onpopstate = () => hadle()
     </script>
 </body>
 </html>
