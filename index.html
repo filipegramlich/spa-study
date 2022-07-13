@@ -29,9 +29,10 @@
             event.preventDefault()
 
             handle()
+            window.history.pushState({}, "", event.target.href)
         }
         function handle(){
-            const pathname = window.location.pathname
+            const {pathname} = window.location
         }
     </script>
 </body>
