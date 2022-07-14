@@ -1,0 +1,23 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipegramlich/spa-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipegramlich/spa-study/issues"
+  },
+  "homepage": "https://github.com/filipegramlich/spa-study#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
